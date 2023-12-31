@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Animal Sound Identification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+
+  <body>
+    <div class="col-xs-12 header_div text-center">
+      <h2>Animal Noise Identification</h2>
+      <p> Note: Different sounds such as mooing, barking, trumpeting and meowing should be made and can be identified by the app.</p>
+      <center>
+        <br>
+        <button class="btn btn-primary" onclick="startClassification();"> START </button>
+        <h3 id="result_label"> I can hear - </h3>
+        <h4 id="result_confidence"> Accuracy - </h4>
+        <br>
+        <img src="Cow.jpg" id="cow" width="290" height="250">
+        <img src="Cat.jpg" id="cat" width="250" height="250">
+        <img src="Dog.jpg" id="dog" width="250" height="250">
+        <img src="Elephant.jpg" id="elephant" width="330" height="250">
+      </center>
+    </div>
+   <script src="main.js"></script>
+</body>
+</html>
